@@ -49,21 +49,21 @@ namespace SimplexApp
                     }
                     
                     default:
-                    {
+                    {   
                         Console.WriteLine("Uncorrect command");
                         break;
                     }
                 }
 
-                /*try
-                {*/
+                try
+                {
                     task.ReadDataFromTxt(command[1]);
-                //}
-                /*catch (Exception e)
+                }
+                catch (Exception e)
                 {
                     task = null;
                     Console.WriteLine("Some errors occurred, please check your input and try again.");
-                }*/
+                }
 
                 if (task != null)
                 {
